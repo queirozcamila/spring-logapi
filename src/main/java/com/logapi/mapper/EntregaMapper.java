@@ -1,4 +1,4 @@
-package com.logapi.Mapper;
+package com.logapi.mapper;
 
 
 import com.logapi.dto.EntregaDto;

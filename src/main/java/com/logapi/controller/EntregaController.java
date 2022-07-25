@@ -1,6 +1,6 @@
 package com.logapi.controller;
 
-import com.logapi.Mapper.EntregaMapper;
+import com.logapi.mapper.EntregaMapper;
 import com.logapi.dto.EntregaDto;
 import com.logapi.input.EntregaInput;
 import com.logapi.model.Entrega;
