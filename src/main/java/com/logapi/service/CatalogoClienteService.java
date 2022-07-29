@@ -22,13 +22,13 @@ public class CatalogoClienteService {
     @Transactional
     public Cliente salvar(Cliente cliente) {
 
-        boolean emailEmUso = clienteRepository.findByEmail(cliente.getEmail())
-                .stream()
-                .anyMatch(clienteExistente -> !clienteExistente.equals(cliente));
-
-        if(emailEmUso){
-            throw new NegocioException("Já existe um cliente cadastrado com este email");
-        }
+//        boolean emailEmUso = clienteRepository.findByEmail(cliente.getEmail())
+//                .stream()
+//                .anyMatch(clienteExistente -> !clienteExistente.equals(cliente));
+//
+//        if(emailEmUso){
+//            throw new NegocioException("Já existe um cliente cadastrado com este email");
+//        }
         return clienteRepository.save(cliente);
     }
 
