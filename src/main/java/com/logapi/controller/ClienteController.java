@@ -67,4 +67,14 @@ public class ClienteController {
         catalogoClienteService.excluir(clienteId);
         return ResponseEntity.noContent().build();
     }
+
+    //Metodo exclusivo para teste
+    @PostMapping(value = "/retornar")
+    public ResponseEntity<String> retornar(@RequestBody String s){
+
+        if(s != null){
+            return ResponseEntity.ok(s);
+        }
+        return ResponseEntity.badRequest().build();
+    }
 }
